@@ -1237,11 +1237,12 @@ ruleUSHolidays = map go usHolidays
       , prod = \_ -> tt $ monthDay m d
       }
 
+-- TODO: these are temp fixes. Waiting for the official.
 moreUSHolidays :: [(Text, String, Int, Int, Int)]
 moreUSHolidays =
   [ ( "Martin Luther King's Day" -- Third Monday of January
     , "(MLK|Martin Luther King,?)( Jr.?| Junior)? day"
-    , 3, 1, 1
+    , 2, 1, 1
     )
   , ( "Father's Day" -- Third Sunday of June
     , "father'?s?'? day"
@@ -1253,11 +1254,11 @@ moreUSHolidays =
     )
   , ( "Thanksgiving Day" -- Fourth Thursday of November
     , "thanks?giving( day)?"
-    , 4, 4, 11
+    , 3, 4, 11
     )
   , ( "Black Friday" -- Fourth Friday of November
     , "black frid?day"
-    , 4, 5, 11
+    , 3, 5, 11
     )
   ,  ( "Labor Day" -- First Monday of September
      , "labor day"
